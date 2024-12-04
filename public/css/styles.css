@@ -1,0 +1,121 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Main container for the whole app */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .header .logo h1 {
+    margin: 0;
+  }
+  
+  .header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .header nav ul li {
+    margin: 0 15px;
+  }
+  
+  .header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  /* Landing section styles */
+  .landing {
+    margin-top: 80px; /* Adjust for the fixed header */
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .landing h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .landing p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #555;
+  }
+  
+  .cta-button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #4cae4c;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header nav ul {
+      flex-direction: column;
+    }
+  
+    .header nav ul li {
+      margin-bottom: 10px;
+    }
+  
+    .landing h2 {
+      font-size: 1.5rem;
+    }
+  
+    .cta-button {
+      width: 100%;
+    }
+  }
+  

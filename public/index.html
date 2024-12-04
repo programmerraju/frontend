@@ -4,45 +4,65 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    
     <meta name="description" content="LANverse: A platform for managing and hosting LAN parties with unique features for gamers." />
     
-    <!-- Title of the web app -->
     <title>LANverse - LAN Party Management</title>
     
     <!-- Favicon -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     
-    <!-- Apple Touch Icon for mobile devices -->
+    <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     
     <!-- Manifest for PWA -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     
-    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <!-- Open Graph and Twitter Meta Tags -->
     <meta property="og:title" content="LANverse - LAN Party Management" />
     <meta property="og:description" content="Manage and host your LAN parties with ease. Join, create, and enjoy a unique party experience." />
     <meta property="og:image" content="%PUBLIC_URL%/logo192.png" />
     <meta property="og:url" content="http://www.lanverse.com" />
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:title" content="LANverse - LAN Party Management" />
-    <meta name="twitter:description" content="Join, create, and manage LAN parties with LANverse." />
-    <meta name="twitter:image" content="%PUBLIC_URL%/logo192.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    
-    <!-- Stylesheet Link (assuming you have a custom stylesheet) -->
-    <link rel="stylesheet" href="%PUBLIC_URL%/css/styles.css" />
-  </head>
-  
-  <body>
-    <!-- For users without JavaScript -->
-    <noscript>You need to enable JavaScript to run this app.</noscript>
 
-    <!-- React app will mount here -->
+    <!-- Link to External CSS for Styling -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Main Skeleton Layout -->
     <div id="root"></div>
     
-    <!-- Optional: Load scripts dynamically in production -->
+    <!-- Main Content Area -->
+    <main class="main-container">
+      <header class="header">
+        <div class="logo">
+          <h1>LANverse</h1>
+          <p>Your LAN Party Management Platform</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#parties">Parties</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="landing">
+        <h2>Welcome to LANverse</h2>
+        <p>Join, create, and manage your LAN parties with ease!</p>
+        <button class="cta-button">Start Your Party</button>
+      </section>
+
+      <footer class="footer">
+        <p>&copy; 2024 LANverse. All Rights Reserved.</p>
+      </footer>
+    </main>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <!-- Optional Script -->
     <script src="%PUBLIC_URL%/js/script.js"></script>
   </body>
 </html>
